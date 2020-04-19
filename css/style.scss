@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+$warna-link: rgba(255, 20, 147);
+$warna-latar: rgba(127, 255, 212);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/aerithhhhh.jpg);
+  background-position-x: 25%;
+  background-repeat: no-repeat;
+}
+
+nav {
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+  height: 54px;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(127, 255, 212),
+    rgba(0, 191, 255)
+  );
+  box-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.3);
+  .logo {
+    color: $warna-link;
+    margin-left: 1em;
+    font-family: "Comic Neue";
+  }
+  ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+
+    li {
+      list-style: none;
+      a {
+        font-size: 1em;
+        text-decoration: none;
+        font-family: cursive;
+        color: $warna-link;
+        &:hover {
+          color: rgba(255, 20, 147, 0.8);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    background-position-x: 25%;
+  }
+  nav {
+    ul {
+      width: 100%;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      top: 52px;
+      height: 20%;
+      transition: 0.5s;
+      // flex: 1;
+      background-color: lightblue;
+      z-index: -1;
+
+      transform: translateY(-100%);
+      transition: 0.5s;
+      // transform: scaleY(0);
+      // flex: 0;
+
+      // li {
+      //   &:nth-child(1) {
+      //     opacity: 0;
+      //   }
+      // }
+    }
+    .tombol-responsif {
+      width: 2em;
+      height: 2em;
+      background-color: white;
+      margin-right: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 5px;
+      background-color: rgb(247, 155, 204);
+      cursor: pointer;
+      span {
+        display: block;
+        width: calc(2em - 6px);
+        height: 2px;
+        background-color: #ccc;
+      }
+    }
+  }
+  .responsif {
+    // display: flex;
+
+    transform: translateY(0%);
+    // transform: scaleY(1);
+    // transition: flex 1s ease-out;
+  }
+  ul.responsif li {
+    &:nth-child(1) {
+      opacity: 1;
+      transition-delay: 0.2s;
+    }
+    &:nth-child(2) {
+      transition-delay: 0.3s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.4s;
+    }
+  }
+}
