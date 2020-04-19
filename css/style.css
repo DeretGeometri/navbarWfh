@@ -86,17 +86,6 @@ nav ul li a:hover {
   .responsif {
     transform: translateY(0%);
   }
-
-  ul.responsif li:nth-child(1) {
-    opacity: 1;
-    transition-delay: 0.2s;
-  }
-  ul.responsif li:nth-child(2) {
-    transition-delay: 0.3s;
-  }
-  ul.responsif li:nth-child(3) {
-    transition-delay: 0.4s;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
